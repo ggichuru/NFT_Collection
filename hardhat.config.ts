@@ -33,7 +33,7 @@ const config: HardhatUserConfig = {
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
     rinkeby: {
-      url: process.env.PROVIDER_URL,
+      url: "https://rinkeby.infura.io/v3/e7aec242b2414e9ebfb4a35bd1aca726",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },

@@ -7,6 +7,10 @@
     "@openzeppelin/contracts": "^4.5.0",
     "hardhat": "^2.8.4"
   },
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deploy.ts --network rinkeby",
+    "compile": "npx hardhat compile"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
     "@nomiclabs/hardhat-etherscan": "^3.0.0",
