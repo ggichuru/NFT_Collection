@@ -258,7 +258,7 @@ export default function Home() {
     if (!presaleStarted)
       return (
         <div>
-          <div className={styles.description}>Presale hasnt started</div>
+          <div className={styles.description}>Presale hasn't started</div>
         </div>
       );
 
@@ -293,8 +293,19 @@ export default function Home() {
       <div className={styles.main}>
         <div>
           <h1 className={styles.title}> Welcome to Wakulima</h1>
+          <div className={styles.description}>
+            An NFT collection for the Farmers parade of NASATS Labs
+          </div>
+          <div className={styles.description}>
+            {tokenIdsMinted}/20 have been minted
+          </div>
+          {renderButton()}
+        </div>
+        <div>
+          <img className={styles.image} src="./images/0.svg" />
         </div>
       </div>
+      <footer className={styles.footer}>@NASATS Labs</footer>
     </div>
   );
 }
