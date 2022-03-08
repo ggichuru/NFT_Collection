@@ -3,7 +3,7 @@ import Head from "next/head";
 import { useState, useRef, useEffect } from "react";
 import Web3Modal from "web3modal";
 import styles from "../styles/Home.module.css";
-import { NFT_CONRACT_ADDRESS, abi } from "./constants";
+import { NFT_CONRACT_ADDRESS, abi } from "../constants/constants";
 
 export default function Home() {
   const [walletConnected, setWalletConneted] = useState(false);
